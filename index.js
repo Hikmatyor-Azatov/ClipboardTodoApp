@@ -16,13 +16,13 @@ function check() {
 		addItem();
 	} else if (text.value !=="" && list.childElementCount === 14){
 		addItem();
-		lock.src = "lock.png";
+		lock.src = "Images/lock.png";
 	}
 }
 
 function destroy(el) {
 	el.parentNode.remove();
-	lock.src = "unlock.png";
+	lock.src = "Images/unlock.png";
 }
 
 btn.addEventListener('click', check);
